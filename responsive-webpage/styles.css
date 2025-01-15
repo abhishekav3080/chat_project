@@ -1,0 +1,60 @@
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Container for the three sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left Menu */
+.left-menu {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 55%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Right-Side Panel */
+.right-panel {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Collapsible Menu */
+.left-menu.collapsed {
+    display: none;
+}
